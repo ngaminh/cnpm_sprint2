@@ -1,6 +1,7 @@
 {
   "name": "cnpmnc",
   "version": "0.1.0",
+  "homepage": "https://github.com/Thanhle-18092003/DoAnCongNghePhanMemNangCao.git",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.2.6",

@@ -12,6 +12,7 @@ import LienHe from './pages/lienHe'
 import DSCuaHang from './pages/danhSachCuaHang'
 import DangKy from './pages/SignUpPage/SignUpPage'
 import DangNhap from './pages/SignInPage/SignInPage'
+import Details from './pages/ProductDetailsPage/ProductDetailsPage'
 import DSXe from './pages/xe'
 import CTXe from './pages/ChiTietXe'
 import PrivateRoute from './components/PrivateRoute'
@@ -89,6 +90,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dmxe" element={<DMXe />} />
+          <Route path="/product-details/:id" element={<Details/>} />
           <Route path="/lienhe" element={<LienHe />} />
           <Route path="/dscuahang" element={<DSCuaHang />} />
           <Route path="/dsxe" element={<DSXe />} />

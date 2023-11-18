@@ -35,7 +35,7 @@ const HomePage = () => {
     }
   }
 
-  const { isLoading, data: products, isPreviousData } = useQuery({
+  const { isPending, data: products, isPreviousData } = useQuery({
     queryKey: ['products', limit, searchDebounce],
     queryFn: fetchProductAll,
     retry: 3,
@@ -49,7 +49,7 @@ const HomePage = () => {
   }, [])
 
   return (
-    <Loading isLoading={isLoading || loading}>
+    <Loading isLoading={isPending || loading}>
       <div style={{ width: '1270px', margin: '0 auto' }}>
         <WrapperTypeProduct>
           {typeProducts.map((item) => {
